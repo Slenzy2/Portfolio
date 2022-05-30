@@ -1,22 +1,22 @@
 <template>
-  <div class="">
-    <Hero />
-    <Skills />
+  <div class="hero">
+    <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="hero_text">
+      <div class="hero_text_name"><span>Hey</span> I'm Tobi,<br> <span>A Web-Developer</span></div>
+      <!-- <div class="hero_text_desc">I am a 24 year old Front-end Developer</div> -->
+    </div>
   </div>
 </template>
 
 <script>
-import Hero from '../components/Hero.vue'
-import Skills from '../components/Skills.vue'
-
 export default {
-  name: 'HelloWorld',
+  name: 'Hero',
   props: {
 
-  },
-  components:{
-    Hero,
-    Skills
   }
 }
 </script>
@@ -42,6 +42,8 @@ export default {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    /* border: 1px solid rgba(255, 255, 255, 0.56); */
+
   }
   .hero_text_name{
     font-size: 6rem;
@@ -66,7 +68,7 @@ export default {
   height: 100%;
   top: 0;
   left: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
   overflow: hidden; 
   }
   .line::after {
